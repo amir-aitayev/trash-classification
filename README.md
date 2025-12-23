@@ -19,13 +19,17 @@ The project compares a **custom Convolutional Neural Network (CNN)** trained fro
 - Multiple inference modes: single image, batch processing, and live webcam input
 
 ## 📁 Project Structure
-- `train_transfer.py` — Train MobileNetV2 using transfer learning  
-- `predict_image.py` — Predict the class of a single image  
-- `batch_predict.py` — Perform batch prediction on image folders  
-- `webcam_predict.py` — Real-time trash classification using webcam  
-- `evaluate_model.py` — Generate confusion matrix and evaluation metrics  
-- `inspect_dataset.py` — Inspect dataset structure and sample images  
-- `model/` — Saved models and evaluation outputs  
+train_model.py — Train the MobileNetV2 transfer learning model
+baseline_model.py — Train and evaluate baseline CNN model
+predict_image.py — Predict the class of a single image
+batch_predict.py — Perform batch prediction on image folders
+webcam_predict.py — Real-time trash classification using webcam
+evaluate_model.py — Generate confusion matrix and evaluation metrics
+inspect_dataset.py — Inspect dataset structure and sample images
+data_loader.py — Dataset loading and preprocessing utilities
+check_setup.py — Environment and dependency validation
+main.py — Entry point for running the project
+
 
 ## 📊 Dataset
 The dataset consists of waste images grouped into six categories:
